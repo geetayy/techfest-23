@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admissions - SLIET</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <style>
+        .mininav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .mininav a {
+            color: white;
+            display: block;
+            margin-right: 1.5rem;
+            padding: 0.2rem 0;
+            border-bottom: 2px solid white;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .mininav a:hover {
+            color: #92000a;
+            border-bottom: 2px solid #92000a;
+        }
+
+
+        li {
+            margin-bottom: 1rem;
+        }
+
+        .text li:before {
+            content: "\2022";
+            color: #0078d7;
+            display: inline-block;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-right: 0.5rem;
+            vertical-align: middle;
+        }
+
+    </style>
+</head>
+<body>
+<header style="position:sticky;">
+    <nav>
+        <div class="left-div" style="display: flex">
+            <div class="img-wrap">
+                <img alt="" src="img/logo.png">
+            </div>
+            <a href="index.html">
+                <div id="logo-name">SLIET</div>
+            </a>
+            <ul>
+                <li><a href="admissions.html">Admissions</a></li>
+            </ul>
+        </div>
+        <ul style="position: relative; top: 0.3rem">
+            <li class="dropdown">
+                <a href="#home">The Institute</a>
+                <img alt="" src="img/chevron-down.png">
+                <div class="dropdown-content">
+                    <a href="history.html">History</a>
+                    <a href="vision.html">Vision &amp; Mission</a>
+                    <a href="organisation.html">Organisation</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#about">Academics</a>
+                <img alt="" src="img/chevron-down.png">
+                <div class="dropdown-content">
+                    <div style="display: flex">
+                        <div><a href="intro_acad.html">Introduction</a>
+                            <a href="faculty.html">Faculty Members</a>
+                            <a href="acadstructure.html">Academic Structure</a></div>
+                        <div><a href="rulesnregulations.html">Student Section</a>
+                            <a href="accredition.html">Accreditions</a>
+                            <a href="valueaddition.html">Value Addition
+                                Courses</a></div>
+                    </div>
+
+
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#services">Administration</a>
+                <img alt="" src="img/chevron-down.png">
+                <div class="dropdown-content">
+                    <a href="chairman.html">Chairman</a>
+                    <a href="director.html">Director</a>
+                    <a href="#">Deans</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#portfolio">Departments</a>
+                <img alt="" src="img/chevron-down.png">
+                <div class="dropdown-content">
+                    <a href="cse.html">Computer Science</a>
+                    <a href="electronics.html">Electronics and Electrical</a>
+                    <a href="mechanical.html">Mechanical</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#contact">Facilities</a>
+                <img alt="" src="img/chevron-down.png">
+                <div class="dropdown-content">
+                    <a href="library.html">Central Library</a>
+                    <a href="acss.html">ACSS</a>
+                    <a href="eresources.html">E-Resources</a>
+                </div>
+            </li>
+            <li>
+                <div class="search-icon">
+                    <button style="padding:0 1rem; padding-top: 0.2rem">
+                        <img alt="" src="img/search-icon.svg"
+                             style=""/>
+                    </button>
+                </div>
+
+            </li>
+        </ul>
+    </nav>
+    <div class="search-box">
+        <form>
+            <input placeholder="Search" type="text">
+            <button type="submit">
+                <img alt="" src="img/search-icon.svg"/>
+            </button>
+        </form>
+    </div>
+</header>
+<div style="margin: 0 auto; max-width: 1500px; ">
+    <main style="border: 2px solid white; position:relative; top: 3rem;  padding:1rem 2rem; margin: 0 2.5rem">
+        <img alt="" src="img/scroll.png"
+             style="width: 150px; position: absolute; left: -2rem; top: -0.8rem; transform: rotateY(30deg)">
+        <h1 style="cursor: default">Admissions</h1>
+        <nav class="mininav">
+            <ul style="margin-bottom: 1rem">
+                <li><a href="courses.html">Courses Offered</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <img alt="" src="img/admissions.jpg"
+             style="width: 40%; position:absolute; right: 0.5rem; top: 20%; border-radius: 2px; border: 1px solid white">
+        <div class="text" style="padding-right: 1rem; width: 60%">
+            <p>We are currently accepting applications for the following programs:</p>
+
+            <ul>
+                <li>B.Tech in Computer Science and Engineering</li>
+                <li>B.Tech in Electronics and Communication Engineering</li>
+                <li>B.Tech in Mechanical Engineering</li>
+                <li>B.Tech in Chemical Engineering</li>
+                <li>B.Tech in Food Technology</li>
+                <li>B.Tech in Instrumentation and Control Engineering</li>
+                <li>B.Tech in Electrical Engineering</li>
+            </ul>
+
+            <p>To apply, please follow the steps below:</p>
+
+            <ul>
+                <li>Visit the official website of SLIET</li>
+                <li>Click on the "Admissions" tab and select your desired program</li>
+                <li>Fill out the online application form with your personal and academic details</li>
+                <li>Upload the required documents (scanned copies of your passport-size photograph, signature, and
+                    academic
+                    transcripts)
+                </li>
+                <li>Pay the application fee online via net banking, credit/debit card or other payment options available
+                </li>
+                <li>Submit the application form and take a printout of the confirmation page for future reference</li>
+            </ul>
+
+
+        </div>
+        <p>If you have any queries related to the admissions process, please contact us at admissions@sliet.ac.in</p>
+
+    </main>
+</div>
+<footer style="padding: 2rem 0; margin-top: 5rem">
+    <p style="margin: 0">&copy; SLIET 2023. All rights reserved.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admissions - SLIET</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+
+    <style>
+        .mininav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .mininav a {
+            color: white;
+            display: block;
+            margin-right: 1.5rem;
+            padding: 0.2rem 0;
+            border-bottom: 2px solid white;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .mininav a:hover {
+            color: #92000a;
+            border-bottom: 2px solid #92000a;
+        }
+
+
+        .text li {
+            margin-bottom: 1rem;
+        }
+
+        .text li:before {
+            content: "\2022";
+            color: #0078d7;
+            display: inline-block;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-right: 0.5rem;
+            vertical-align: middle;
+        }
+
+        .collapsible-header {
+            cursor: pointer;
+            text-transform: uppercase;
+
+        }
+
+        .collapsible-body {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+<header style="position:sticky;">
+    <nav>
+        <div class="left-div" style="display: flex">
+            <div class="img-wrap">
+                <img alt="" src="img/logo.png">
+            </div>
+            <a href="index.html">
+                <div id="logo-name">SLIET</div>
+            </a>
+            <ul>
+                <li><a href="admissions.html">Admissions</a></li>
+            </ul>
+        </div>
+        <ul style="position: relative; top: 0.3rem">
+            <li class="dropdown">
+                <a href="#home">The Institute</a>
+                <img alt="" src="img/chevron-down.png">
+                <div class="dropdown-content">
+                    <a href="history.html">History</a>
+                    <a href="vision.html">Vision &amp; Mission</a>
+                    <a href="organisation.html">Organisation</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#about">Academics</a>
+                <img alt="" src="img/chevron-down.png">
+                <div class="dropdown-content">
+                    <div style="display: flex">
+                        <div><a href="intro_acad.html">Introduction</a>
+                            <a href="faculty.html">Faculty Members</a>
+                            <a href="acadstructure.html">Academic Structure</a></div>
+                        <div><a href="rulesnregulations.html">Student Section</a>
+                            <a href="accredition.html">Accreditions</a>
+                            <a href="valueaddition.html">Value Addition
+                                Courses</a></div>
+                    </div>
+
+
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#services">Administration</a>
+                <img alt="" src="img/chevron-down.png">
+                <div class="dropdown-content">
+                    <a href="chairman.html">Chairman</a>
+                    <a href="director.html">Director</a>
+                    <a href="#">Deans</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#portfolio">Departments</a>
+                <img alt="" src="img/chevron-down.png">
+                <div class="dropdown-content">
+                    <a href="cse.html">Computer Science</a>
+                    <a href="electronics.html">Electronics and Electrical</a>
+                    <a href="mechanical.html">Mechanical</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#contact">Facilities</a>
+                <img alt="" src="img/chevron-down.png">
+                <div class="dropdown-content">
+                    <a href="library.html">Central Library</a>
+                    <a href="acss.html">ACSS</a>
+                    <a href="eresources.html">E-Resources</a>
+                </div>
+            </li>
+            <li>
+                <div class="search-icon">
+                    <button style="padding:0 1rem; padding-top: 0.2rem">
+                        <img alt="" src="img/search-icon.svg"
+                             style=""/>
+                    </button>
+                </div>
+
+            </li>
+        </ul>
+    </nav>
+    <div class="search-box">
+        <form>
+            <input placeholder="Search" type="text">
+            <button type="submit">
+                <img alt="" src="img/search-icon.svg"/>
+            </button>
+        </form>
+    </div>
+</header>
+<div style="margin: 0 auto; max-width: 1500px; ">
+    <main style="border: 2px solid white; position:relative; top: 3rem;  padding:1rem 2rem; margin: 0 2.5rem">
+        <img alt="" src="img/scroll.png"
+             style="width: 150px; position: absolute; left: -2rem; top: -0.8rem; transform: rotateY(30deg)">
+        <h1 style="cursor: default">Value Addition Courses</h1>
+
+
+        <div class="text" style="padding-right: 1rem; text-align: center">
+            <table style="width: 848px; border-style: solid; border-color: #000000; margin: 0 auto;">
+                <tbody>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;"><strong>&nbsp;</strong></td>
+                    <td style="width: 180px; border: 1px solid;"><strong>Name of the value added courses (with&nbsp; 30
+                        or more contact hours) offered </strong></td>
+                    <td style="width: 10px; border: 1px solid;"><strong>Year of offering</strong></td>
+                    <td style="width: 62px; border: 1px solid;"><strong>No. of times offered during the same
+                        year</strong></td>
+                    <td style="width: 77px; border: 1px solid;"><strong>Duration of course</strong></td>
+                    <td style="width: 90px; border: 1px solid;"><strong>Number of students enrolled in the year</strong>
+                    </td>
+                    <td style="width: 125px; border: 1px solid;"><strong>Number of Students completing the course&nbsp;
+                        in the year</strong></td>
+                    <td style="width: 293px; border: 1px solid;">
+                        <p><strong>&nbsp;</strong></p>
+                        <p><strong>WEBLINK OF THE </strong></p>
+                        <p><strong>INFORMATION</strong></p></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;"><strong>&nbsp;</strong></td>
+                    <td colspan="6" style="width: 544px; border: 1px solid;"><strong>2018-19</strong></td>
+                    <td style="width: 293px; border: 1px solid;"><strong>&nbsp;</strong></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">1.</td>
+                    <td style="width: 180px; border: 1px solid;">Personality Development Programme</td>
+                    <td style="width: 10px; border: 1px solid;">2018-19</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">30 Hours</td>
+                    <td style="width: 90px; border: 1px solid;">50</td>
+                    <td style="width: 125px; border: 1px solid;">50</td>
+                    <td style="width: 293px; border: 1px solid;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/personality-development-program/"
+                            rel="attachment wp-att-7403">Personality Development Program</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">2.</td>
+                    <td style="width: 180px; border: 1px solid;">Workshop on MATLAB and SIMULINK for Process Engineers
+                    </td>
+                    <td style="width: 10px; border: 1px solid;">2018-19</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">30 Hours</td>
+                    <td style="width: 90px; border: 1px solid;">152</td>
+                    <td style="width: 125px; border: 1px solid;">152</td>
+                    <td style="width: 293px; border: 1px solid;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/workshop-on-matlab-and-simulink-for-process-engineers/"
+                            rel="attachment wp-att-7404">Workshop on MATLAB and SIMULINK for Process Engineers</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">3.</td>
+                    <td style="width: 180px; border: 1px solid;">Pradhan Mantri Kaushal Vikas Yojana (PMKVY)</td>
+                    <td style="width: 10px; border: 1px solid;">2018-19</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">10.11.18 to 05.05.19</td>
+                    <td style="width: 90px; border: 1px solid;">25</td>
+                    <td style="width: 125px; border: 1px solid;">25</td>
+                    <td style="width: 293px; border: 1px solid;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/pradhan-mantri-kaushal-vikas-yojana-pmkvy/"
+                            rel="attachment wp-att-7405">Pradhan Mantri Kaushal Vikas Yojana (PMKVY)</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">4.</td>
+                    <td style="width: 180px; border: 1px solid;">In-house Industrial Training (Truneek Team)</td>
+                    <td style="width: 10px; border: 1px solid;">2018-19</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">23.05.19 to 30.06.19</td>
+                    <td style="width: 90px; border: 1px solid;">26</td>
+                    <td style="width: 125px; border: 1px solid;">26</td>
+                    <td style="width: 293px; border: 1px solid;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/in-house-industrial-training-truneek-team/"
+                            rel="attachment wp-att-7406">In-house Industrial Training (Truneek Team)</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">5.</td>
+                    <td style="width: 180px; border: 1px solid;">Analog CMOS Integrated Circuit Design</td>
+                    <td style="width: 10px; border: 1px solid;">2018-19</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">14.04.18 to 16.04.18</td>
+                    <td style="width: 90px; border: 1px solid;">20</td>
+                    <td style="width: 125px; border: 1px solid;">20</td>
+                    <td style="width: 293px; border: 1px solid;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/analog-cmos-integrated-circuit-design/"
+                            rel="attachment wp-att-7407">Analog CMOS Integrated Circuit Design</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">6.</td>
+                    <td style="width: 180px; border: 1px solid;">Student Excellence and Learning Program (SELP)</td>
+                    <td style="width: 10px; border: 1px solid;">2018-19</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">04.02.19 to 09.02.19</td>
+                    <td style="width: 90px; border: 1px solid;">55</td>
+                    <td style="width: 125px; border: 1px solid;">55</td>
+                    <td style="width: 293px; border: 1px solid;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/student-excellence-and-learning-program-selp/"
+                            rel="attachment wp-att-7408">Student Excellence and Learning Program (SELP)</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">7.</td>
+                    <td style="width: 180px; border: 1px solid;">Informal Interactive Sessions for Degree Students under
+                        Communication Skills &amp; Personality Development Cell
+                    </td>
+                    <td style="width: 10px; border: 1px solid;">2018-19</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">Jan to May 2019</td>
+                    <td style="width: 90px; border: 1px solid;">70</td>
+                    <td style="width: 125px; border: 1px solid;">70</td>
+                    <td style="width: 293px; border: 1px solid;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/informal-interactive-session-for-degree-students/"
+                            rel="attachment wp-att-7409">Informal Interactive Session for Degree Students</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">8.</td>
+                    <td style="width: 180px; border: 1px solid;">Importance of Inculcating Values Amongst Youth Under
+                        Counselling and Soft Skills Club
+                    </td>
+                    <td style="width: 10px; border: 1px solid;">2018-19</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">11.03.19 – 13.03.19</td>
+                    <td style="width: 90px; border: 1px solid;">100</td>
+                    <td style="width: 125px; border: 1px solid;">100</td>
+                    <td style="width: 293px; border: 1px solid;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/importance-of-inculcating-values-amongst-youth/"
+                            rel="attachment wp-att-7410">Importance of Inculcating Values Amongst Youth</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">9.</td>
+                    <td style="width: 180px; border: 1px solid;">GATE Training for final year UG students</td>
+                    <td style="width: 10px; border: 1px solid;">2018-19</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">17.12.18 to 04.01.19</td>
+                    <td style="width: 90px; border: 1px solid;">243</td>
+                    <td style="width: 125px; border: 1px solid;">243</td>
+                    <td style="width: 293px; border: 1px solid;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/gate-training-2018-19/"
+                            rel="attachment wp-att-7411">GATE Training 2018-19</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">10.</td>
+                    <td style="width: 180px; border: 1px solid;">In-house Industrial Training</td>
+                    <td style="width: 10px; border: 1px solid;">2018-19</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">23.05.19 to 04.07.19</td>
+                    <td style="width: 90px; border: 1px solid;">50</td>
+                    <td style="width: 125px; border: 1px solid;">50</td>
+                    <td style="width: 293px; border: 1px solid;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/in-house-industrial-training/"
+                            rel="attachment wp-att-7412">In House Industrial Training</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;"><strong>&nbsp;</strong></td>
+                    <td colspan="6" style="width: 544px; border: 1px solid;"><strong>2019-20</strong></td>
+                    <td style="width: 293px; border: 1px solid;"><strong>&nbsp;</strong></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">11</td>
+                    <td style="width: 180px; border: 1px solid;">STTP on Material Characterization &amp; Analytical
+                        Techniques for Research applications
+                    </td>
+                    <td style="width: 10px; border: 1px solid;">2019-20</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">01.07.19 to 05.07.19</td>
+                    <td style="width: 90px; border: 1px solid;">39</td>
+                    <td style="width: 125px; border: 1px solid;">39</td>
+                    <td style="width: 293px; border: 1px solid;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/mcatra-2019/"
+                            rel="attachment wp-att-7413">MCATRA-2019</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">12</td>
+                    <td style="width: 180px; border: 1px solid;">STC on DFT &amp; its applications using Gaussian
+                        software
+                    </td>
+                    <td style="width: 10px; border: 1px solid;">2019-20</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">24.02.20 to 28.02.20</td>
+                    <td style="width: 90px; border: 1px solid;">27</td>
+                    <td style="width: 125px; border: 1px solid;">27</td>
+                    <td style="width: 293px; border: 1px solid;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/dft-and-its-applications/"
+                            rel="attachment wp-att-7414">DFT-and Its applications</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">13</td>
+                    <td style="width: 180px; border: 1px solid;">Online STC on Analytical Techniques in the realm of
+                        Molecules &amp; Materials
+                    </td>
+                    <td style="width: 10px; border: 1px solid;">2019-20</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">26.06.20 to 30.06.20</td>
+                    <td style="width: 90px; border: 1px solid;">192</td>
+                    <td style="width: 125px; border: 1px solid;">192</td>
+                    <td style="width: 293px; border: 1px solid;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/analytical-techniques-in-realm-of-molecules-materials/"
+                            rel="attachment wp-att-7415">Analytical Techniques in realm of Molecules Materials</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">14</td>
+                    <td style="width: 180px; border: 1px solid;">
+                        <p>Workshop on Python Programming</p>
+                        <p>&nbsp;</p></td>
+                    <td style="width: 10px; border: 1px solid;">2019-20</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">09.02.20 to 22.02.20</td>
+                    <td style="width: 90px; border: 1px solid;">94</td>
+                    <td style="width: 125px; border: 1px solid;">94</td>
+                    <td style="width: 293px; border: 1px solid;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/workshop-on-python-programming/"
+                            rel="attachment wp-att-7416">Workshop on Python Programming</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">15</td>
+                    <td style="width: 180px;">
+                        <p>Workshop on C Programming Language</p>
+                        <p>&nbsp;</p></td>
+                    <td style="width: 10px; border: 1px solid;">2019-20</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">09.02.20 to 22.02.20</td>
+                    <td style="width: 90px; border: 1px solid;">188</td>
+                    <td style="width: 125px; border: 1px solid;">188</td>
+                    <td style="width: 293px; border: 1px solid;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/programming-on-c-language/"
+                            rel="attachment wp-att-7417">Programming on C language</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">16</td>
+                    <td style="width: 180px; border: 1px solid;">Nano-electronic &amp; VLSI: Devices, Circuits and
+                        Systems
+                    </td>
+                    <td style="width: 10px; border: 1px solid;">2019-20</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">04.11.19 to 08.11.19</td>
+                    <td style="width: 90px; border: 1px solid;">40</td>
+                    <td style="width: 125px; border: 1px solid;">40</td>
+                    <td style="width: 293px;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/nano-electronic-vlsi/"
+                            rel="attachment wp-att-7419">Nano Electronic &amp; VLSI</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">17</td>
+                    <td style="width: 180px; border: 1px solid;">Webinar on EDP</td>
+                    <td style="width: 10px; border: 1px solid;">2019-20</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">01.05.20 to 04.05.20</td>
+                    <td style="width: 90px; border: 1px solid;">30</td>
+                    <td style="width: 125px; border: 1px solid;">30</td>
+                    <td style="width: 293px; border: 1px solid;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/webinars-on-edp/"
+                            rel="attachment wp-att-7420">WEBINARS ON EDP</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">18</td>
+                    <td style="width: 180px; border: 1px solid;">
+                        <p>Entrepreneurship Awareness Camp</p>
+                        <p>&nbsp;</p></td>
+                    <td style="width: 10px; border: 1px solid;">2019-20</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">13.02.20 to 15.02.20</td>
+                    <td style="width: 90px; border: 1px solid;">70</td>
+                    <td style="width: 125px; border: 1px solid;">70</td>
+                    <td style="width: 293px; border: 1px solid;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/entrepreneurship-awareness-camp/"
+                            rel="attachment wp-att-7421">Entrepreneurship Awareness Camp</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">19</td>
+                    <td style="width: 180px; border: 1px solid;">Workshop on Happiness and Wellbeing</td>
+                    <td style="width: 10px; border: 1px solid;">2019-20</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">05.08.19 to 07.08.19</td>
+                    <td style="width: 90px; border: 1px solid;">150</td>
+                    <td style="width: 125px; border: 1px solid;">150</td>
+                    <td style="width: 293px; border: 1px solid;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/happiness-and-wellbeing/"
+                            rel="attachment wp-att-7422">Happiness and Wellbeing</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">20</td>
+                    <td style="width: 180px; border: 1px solid;">GATE Training for final year UG students</td>
+                    <td style="width: 10px; border: 1px solid;">2019-20</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;"></td>
+                    <td style="width: 90px; border: 1px solid;">266</td>
+                    <td style="width: 125px; border: 1px solid;">266</td>
+                    <td style="width: 293px; border: 1px solid;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/gate-training-2019-20/"
+                            rel="attachment wp-att-7423">GATE Training 2019-20</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;"><strong>&nbsp;</strong></td>
+                    <td colspan="6" style="width: 544px; border: 1px solid;"><strong>2020-21</strong></td>
+                    <td style="width: 293px; border: 1px solid;"><strong>&nbsp;</strong></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">21</td>
+                    <td style="width: 180px; border: 1px solid;">3-day workshop on Virtual lab for Antenna and Microwave
+                        engineering using TARANG
+                    </td>
+                    <td style="width: 10px; border: 1px solid;">2020-21</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">30 Hours</td>
+                    <td style="width: 90px; border: 1px solid;">80</td>
+                    <td style="width: 125px; border: 1px solid;">80</td>
+                    <td style="width: 293px; border: 1px solid;">
+                        <p>
+                            <a href="http://academic.sliet.ac.in/value-added-courses/virtual-lab-for-antena-and-microwave-engineering-using-tarang/"
+                               rel="attachment wp-att-7424">Virtual Lab for Antena and Microwave Engineering using
+                                Tarang</a></p>
+                        <p><a href="http://academic.sliet.ac.in/value-added-courses/attendance-and-report/"
+                              rel="attachment wp-att-7425">Attendance and Report</a></p></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">22</td>
+                    <td style="width: 180px; border: 1px solid;">Nano-electronics and VLSI Circuit</td>
+                    <td style="width: 10px; border: 1px solid;">2020-21</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">30 Hours</td>
+                    <td style="width: 90px; border: 1px solid;">116</td>
+                    <td style="width: 125px; border: 1px solid;">116</td>
+                    <td style="width: 293px; border: 1px solid;">
+                        <p><a href="http://academic.sliet.ac.in/value-added-courses/nano-electronics-and-vlsi-circuit/"
+                              rel="attachment wp-att-7426">Nano Electronics and VLSI Circuit</a></p>
+                        <p>
+                            <a href="http://academic.sliet.ac.in/value-added-courses/nano-electronics-and-vlsi-attendance/"
+                               rel="attachment wp-att-7427">Nano Electronics and VLSI Attendance</a></p></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">23</td>
+                    <td style="width: 180px; border: 1px solid;">NPIU Training Program for Final year UG students on
+                        Internet of Things
+                    </td>
+                    <td style="width: 10px; border: 1px solid;">2020-21</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">80 Hours</td>
+                    <td style="width: 90px; border: 1px solid;">61</td>
+                    <td style="width: 125px; border: 1px solid;">61</td>
+                    <td style="width: 293px; border: 1px solid;">
+                        <p><a href="http://academic.sliet.ac.in/value-added-courses/internet-of-things/"
+                              rel="attachment wp-att-7428">Internet of things</a></p>
+                        <p><a href="http://academic.sliet.ac.in/value-added-courses/internet-of-things-attendance/"
+                              rel="attachment wp-att-7429">Internet of things Attendance</a></p></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">24</td>
+                    <td style="width: 180px; border: 1px solid;">Robotics and Automation by Dr. Sunil Kumar, AP (ME)
+                    </td>
+                    <td style="width: 10px; border: 1px solid;">2020-21</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">80 HOurs</td>
+                    <td style="width: 90px; border: 1px solid;">75</td>
+                    <td style="width: 125px; border: 1px solid;">75</td>
+                    <td style="width: 293px; border: 1px solid;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/robotics-and-automation-with-attendance/"
+                            rel="attachment wp-att-7431">Robotics and Automation with Attendance</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">25</td>
+                    <td style="width: 180px; border: 1px solid;">Personality Development Training for 2nd year UG
+                        students
+                    </td>
+                    <td style="width: 10px; border: 1px solid;">2020-21</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">60 Hours</td>
+                    <td style="width: 90px; border: 1px solid;">206</td>
+                    <td style="width: 125px; border: 1px solid;">206</td>
+                    <td style="width: 293px; border: 1px solid;">
+                        <p><a href="http://academic.sliet.ac.in/value-added-courses/personality-development-training/"
+                              rel="attachment wp-att-7432">Personality Development Training</a></p>
+                        <p>
+                            <a href="http://academic.sliet.ac.in/value-added-courses/personality-development-training-attendance/"
+                               rel="attachment wp-att-7433">Personality Development Training Attendance</a></p></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;"><strong>&nbsp;</strong></td>
+                    <td colspan="6" style="width: 544px; border: 1px solid;"><strong>2021-22</strong></td>
+                    <td style="width: 293px; border: 1px solid;"><strong>&nbsp;</strong></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">26</td>
+                    <td style="width: 180px; border: 1px solid;">Personality Development Training for 2nd year UG
+                        students
+                    </td>
+                    <td style="width: 10px; border: 1px solid;">2021-22</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">60 Hours</td>
+                    <td style="width: 90px; border: 1px solid;">220</td>
+                    <td style="width: 125px; border: 1px solid;">220</td>
+                    <td style="width: 293px; border: 1px solid;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/personality-development-training-for-2nd-year-ug/"
+                            rel="attachment wp-att-7434">Personality Development Training for 2nd Year UG</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">27</td>
+                    <td style="width: 180px; border: 1px solid;">Induction Program, GCT21 Class (B.E. 1st Year)</td>
+                    <td style="width: 10px; border: 1px solid;">2021-22</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">One Week, (Dec 13-18, 2021)</td>
+                    <td style="width: 90px; border: 1px solid;">23</td>
+                    <td style="width: 125px; border: 1px solid;">23</td>
+                    <td style="width: 293px; border: 1px solid;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/induction-program/"
+                            rel="attachment wp-att-7435">Induction Program</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">28</td>
+                    <td style="width: 180px; border: 1px solid;">Induction Program, GCT20 LEET (B.E. 2nd Year)</td>
+                    <td style="width: 10px; border: 1px solid;">2021-22</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">One Week (Sept 11-14, 2021)</td>
+                    <td style="width: 90px; border: 1px solid;">45</td>
+                    <td style="width: 125px; border: 1px solid;">45</td>
+                    <td style="width: 293px; border: 1px solid;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/induction-program-leet/"
+                            rel="attachment wp-att-7436">Induction Program LEET</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">29</td>
+                    <td style="width: 180px; border: 1px solid;">MATLAB Training</td>
+                    <td style="width: 10px; border: 1px solid;">2021-22</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">April 04-08, 2022</td>
+                    <td style="width: 90px; border: 1px solid;">50</td>
+                    <td style="width: 125px; border: 1px solid;">50</td>
+                    <td style="width: 293px; border: 1px solid;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/matlab-training/"
+                            rel="attachment wp-att-7437">MATLAB Training</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">30</td>
+                    <td style="width: 180px; border: 1px solid;">On-line Industrial Training for Mechanical students
+                        2018 &amp; 2019 batch
+                    </td>
+                    <td style="width: 10px; border: 1px solid;">2021-22</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">July 1-31, 2021</td>
+                    <td style="width: 90px; border: 1px solid;">160</td>
+                    <td style="width: 125px; border: 1px solid;">160</td>
+                    <td style="width: 293px; border: 1px solid;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/online-industrial-training-for-mechanical-students/"
+                            rel="attachment wp-att-7438">Online Industrial Training for Mechanical Students</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;"><strong>&nbsp;</strong></td>
+                    <td colspan="6" style="width: 544px; border: 1px solid;"><strong>2022-23</strong></td>
+                    <td style="width: 293px; border: 1px solid;"><strong>&nbsp;</strong></td>
+                </tr>
+                <tr>
+                    <td style="width: 39px; border: 1px solid;">31</td>
+                    <td style="width: 180px; border: 1px solid;">Personality Development Training for 2nd year UG
+                        students
+                    </td>
+                    <td style="width: 10px; border: 1px solid;">2022-23</td>
+                    <td style="width: 62px; border: 1px solid;">One</td>
+                    <td style="width: 77px; border: 1px solid;">60 Hours</td>
+                    <td style="width: 90px; border: 1px solid;">214</td>
+                    <td style="width: 125px; border: 1px solid;">214</td>
+                    <td style="width: 293px; border: 1px solid;"><a
+                            href="http://academic.sliet.ac.in/value-added-courses/personality-development-training-2022-23/"
+                            rel="attachment wp-att-7439">Personality Development Training 2022-23</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+</div>
+<!--<footer style="padding: 2rem 0; margin-top: 5rem; position: sticky; bottom: 0">-->
+<!--    <p style="margin: 0">&copy; SLIET 2023. All rights reserved.</p>-->
+<!--</footer>-->
+<script src="script.js"></script>
+
+</body>
+</html>

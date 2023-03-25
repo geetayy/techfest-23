@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admissions - SLIET</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+
+    <style>
+        .mininav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .mininav a {
+            color: white;
+            display: block;
+            margin-right: 1.5rem;
+            padding: 0.2rem 0;
+            border-bottom: 2px solid white;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .mininav a:hover {
+            color: #92000a;
+            border-bottom: 2px solid #92000a;
+        }
+
+
+        .text li {
+            margin-bottom: 1rem;
+        }
+
+        .text li:before {
+            content: "\2022";
+            color: #0078d7;
+            display: inline-block;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-right: 0.5rem;
+            vertical-align: middle;
+        }
+
+        .collapsible-header {
+            cursor: pointer;
+            text-transform: uppercase;
+
+        }
+
+        .collapsible-body {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+<header style="position:sticky;">
+    <nav>
+        <div class="left-div" style="display: flex">
+            <div class="img-wrap">
+                <img alt="" src="img/logo.png">
+            </div>
+            <a href="index.html">
+                <div id="logo-name">SLIET</div>
+            </a>
+            <ul>
+                <li><a href="admissions.html">Admissions</a></li>
+            </ul>
+        </div>
+        <ul style="position: relative; top: 0.3rem">
+            <li class="dropdown">
+                <a href="#home">The Institute</a>
+                <img alt="" src="img/chevron-down.png">
+                <div class="dropdown-content">
+                    <a href="history.html">History</a>
+                    <a href="vision.html">Vision &amp; Mission</a>
+                    <a href="organisation.html">Organisation</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#about">Academics</a>
+                <img alt="" src="img/chevron-down.png">
+                <div class="dropdown-content">
+                    <div style="display: flex">
+                        <div><a href="intro_acad.html">Introduction</a>
+                            <a href="faculty.html">Faculty Members</a>
+                            <a href="acadstructure.html">Academic Structure</a></div>
+                        <div><a href="rulesnregulations.html">Student Section</a>
+                            <a href="accredition.html">Accreditions</a>
+                            <a href="valueaddition.html">Value Addition
+                                Courses</a></div>
+                    </div>
+
+
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#services">Administration</a>
+                <img alt="" src="img/chevron-down.png">
+                <div class="dropdown-content">
+                    <a href="chairman.html">Chairman</a>
+                    <a href="director.html">Director</a>
+                    <a href="#">Deans</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#portfolio">Departments</a>
+                <img alt="" src="img/chevron-down.png">
+                <div class="dropdown-content">
+                    <a href="cse.html">Computer Science</a>
+                    <a href="electronics.html">Electronics and Electrical</a>
+                    <a href="mechanical.html">Mechanical</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#contact">Facilities</a>
+                <img alt="" src="img/chevron-down.png">
+                <div class="dropdown-content">
+                    <a href="library.html">Central Library</a>
+                    <a href="acss.html">ACSS</a>
+                    <a href="eresources.html">E-Resources</a>
+                </div>
+            </li>
+            <li>
+                <div class="search-icon">
+                    <button style="padding:0 1rem; padding-top: 0.2rem">
+                        <img alt="" src="img/search-icon.svg"
+                             style=""/>
+                    </button>
+                </div>
+
+            </li>
+        </ul>
+    </nav>
+    <div class="search-box">
+        <form>
+            <input placeholder="Search" type="text">
+            <button type="submit">
+                <img alt="" src="img/search-icon.svg"/>
+            </button>
+        </form>
+    </div>
+</header>
+<div style="margin: 0 auto; max-width: 1500px; ">
+    <main style="border: 2px solid white; position:relative; top: 3rem;  padding:1rem 2rem; margin: 0 2.5rem">
+        <img alt="" src="img/scroll.png"
+             style="width: 150px; position: absolute; left: -2rem; top: -0.8rem; transform: rotateY(30deg)">
+        <h1 style="cursor: default">Courses Offered</h1>
+
+
+        <div class="text" style="padding-right: 1rem; width: 60%">
+            <p>We are currently accepting applications for the following programs:</p>
+
+            <ul>
+                <li class="collapsible">
+                    <div class="collapsible-header" style="display: inline-block">Integrated Certificate Diploma</div>
+                    <div class="collapsible-body">
+                        <p>The objective of the ICD Programme is to produce technically skilled manpower in appropriate
+                            areas.
+
+                            (a) Eligibilty:
+
+                            For admission to 3-Year ICD Programme, the candidates should have passed their 10th class
+                            (Pass in English, Mathematics and Science is compulsory) from a State Education
+                            Board/CBSE/ICSE/ National Open School or an equivalent examination recognized/approved Board
+                            by Ministry of Education, Government of India. Those who are appearing in matriculation
+                            examination may also apply subject to producing the result at the prescribed time.
+
+                            For admission to Lateral Entry ICD (2nd year) in addition to 10th passed as above, must have
+                            passed full time 2 years ITI course/Certificate/10+2 (vocational) in relevant trade with 50%
+                            marks (45% for reserved categories) from Govt./Semi Govt Institute along with 2 years
+                            industrial experience from Govt./Semi Govt. and Private Industry of repute.
+
+                            (b) Duration :
+
+                            The duration of the ICD programme is 3 years. However, in case a student is willing to exit
+                            after successfully completing 2 years in the prescribed course of study with required
+                            credits (earning 96 credits), he/she will be awarded Certificate in the respective course of
+                            Certificate programme. Further, on completion of the required credits (142 credits) diploma
+                            will be awarded after three years.</p>
+                    </div>
+                </li>
+                <li class="collapsible">
+                    <div class="collapsible-header" style="display: inline-block">Bachelor of Engineering</div>
+                    <div class="collapsible-body">
+                        <p>i) Direct Admission through JEE (Main):
+
+                            Institute runs B.E. (4-Year) programme in various disciplines of Engineering and Technology.
+
+                            (a) Eligibility:
+
+                            Candidates are advised to refer to JEE (Main)-2022 website. The eligibility conditions of
+                            JEE (Main) -2022 will be applicable.
+
+                            (b) Duration:
+
+                            The duration of B.E. Programme is 4 years.
+
+                            ii) Lateral Entry Admission through SLIET Entrance Test (SET)-III:
+
+                            Bachelor of Engineering is a continuation of technical expertise acquired in corresponding
+                            Diploma programmes and offers an opportunity to Diploma holders to obtain Bachelor Degree in
+                            Engineering. The student will be admitted in 2nd year of B.E. programme in respective
+                            branch.
+
+                            Eligibility:
+
+                            All candidates who have passed Diploma courses in any discipline from SLIET or from any
+                            other polytechnic affiliated with any State Board of Technical Education and approved by All
+                            India Council for Technical Education (AICTE) securing 55% marks or GPA 5.5 on 10-point
+                            scale or equivalent (50% or CGPA 5.0 on a 10-point scale or equivalent in case of candidates
+                            belonging to reserved category, SC/ST/OBC (Non Creamy Layer)/PH) are eligible to compete for
+                            admission to the appropriate B.E. programmes.</p>
+                    </div>
+                </li>
+                <li class="collapsible">
+                    <div class="collapsible-header" style="display: inline-block">Master of Technology</div>
+                    <div class="collapsible-body">
+                        <p>The objective of M. Tech. programme is continuation of technical expertise acquired in
+                            qualifying Degree Programmes. This will offer an opportunity to the candidate to acquire
+                            skill to work on R&D and Industry projects.
+
+                            a) Eligibility:
+
+                            B.Tech./B.E./B.Sc.(Engg.) Degree from recognized University/Institute in the appropriate
+                            branch. OR
+                            Cleared Section ‘B’ of the Institution of Engineers (India) in appropriate branch or Grade
+                            IETE and has three years of professional experience in reputed organization.
+                            The candidates must have secured at least 60% marks (55% in case of candidates belonging to
+                            reserved categories, SC/ST/OBC (Non Creamy Layer)/PH) in aggregate in qualifying degree.
+                            Valid GATE score.
+                            For appropriate branches at graduate level eligible for admission in various M. Tech.
+                            courses, candidates are advised to refer to website of CCMT – 2022.
+                            Appropriate branches for admission in various M. Tech. courses are as under :
+                            (i)
+                            M. Tech. (Manufacturing Systems Engineering): Candidate should have B.E./B.Tech. Degree in
+                            Mechanical Engineering/Manufacturing Engineering/Production Engineering/Industrial
+                            Engineering or equivalent.
+
+                            (ii)
+                            M. Tech. (Welding and Fabrication): Candidate should have B.E./B.Tech. Degree in Mechanical
+                            Engineering/ Manufacturing Engineering /Welding Technology/Production Engineering/Industrial
+                            Engineering or equivalent.
+
+                            (iii)
+                            M. Tech. (Food Engineering & Technology): Candidate should have B.E./B.Tech. or equivalent
+                            in Food Technology /Food Engineering/Agricultural & Food Engineering/Food Processing &
+                            Preservation/Food Processing Engineering/Food Processing Technology or equivalent.
+
+                            (iv)
+                            M. Tech. (Instrumentation & Control Engineering): Candidate should have B.E. /B. Tech.
+                            Degree in Electrical Engineering/Instrumentation & Control/Electrical and Electronics
+                            Engineering/ Instrumentation Engineering/ Electronics Engineering/Computer Engineering/
+                            Electronics & Instrumentation Engineering/ Electronics &Communication Engineering or
+                            equivalent.
+
+                            (v)
+
+
+                            M. Tech. (Chemical Engineering): Candidate should have B.E./B.Tech. or equivalent in
+                            Chemical Engineering/ Chemical Technology/Chemical Engineering (Plastic and
+                            Polymer)/Chemical and Polymer Engineering/ Chemical & Alcohol Technology/ Chemical and
+                            Bio-Engineering or equivalent.
+
+                            (vi)
+
+
+                            M. Tech. (Electronics & Communication Engineering): Candidate should have B.E./B. Tech.
+                            Degree in Electronics & Communication Engineering/Electrical and Electronics
+                            Engineering/Electronics & Instrumentation Engineering/ Computer Engineering or equivalent.
+
+                            (vii)
+
+
+                            M. Tech. (Computer Science & Engineering): Candidate should have B.E./B. Tech. or equivalent
+                            Degree in
+                            Computer Engineering/Computer Science & Engineering/ Computer Technology/Computer
+                            Science/Information Technology/Computer Science and Information Technology/Computer Science
+                            and System Engineering/ Computer Engineering & Applications.
+
+                            NOTE: In addition to above appropriate branches for courses at SLIET, Longowal as mentioned
+                            at the (Centralized Counselling for M.Tech. / M.Arch./ M.Plan.) CCMT website are also valid.
+                            Eligibility conditions laid down in CCMT shall also be applicable.
+
+                            (b) Duration : The duration of M. Tech. programme is two years.</p>
+                    </div>
+                </li>
+                <li class="collapsible">
+                    <div class="collapsible-header" style="display: inline-block">Master of Science</div>
+                    <div class="collapsible-body">
+                        <p>The focus of various M.Sc. Programmes offered by Science Departments would be to generate
+                            post-graduates who are confident of applying their knowledge to practical problems of
+                            industry including R&D organizations. The curriculum maintains a balance between basic &
+                            applied aspects of the subject concerned to develop analytical skills of the students which
+                            shall be helpful in their career option in academic, research & teaching also.
+
+                            (a) Eligibility:
+
+                            The eligibility for admission to Master of Science (M.Sc.) Programmes will be 55% marks in
+                            aggregate (50% in case of candidates belonging to reserved categories, SC/ST/OBC (Non-Creamy
+                            Layer)/PH) in B.Sc. as follows:
+
+                            M.Sc.(Physics): B.Sc. with Physics as one of the subject.
+                            M.Sc. (Chemistry): B.Sc. with Chemistry as one of the subject.
+                            M.Sc. (Mathematics): B.Sc. with Mathematics as one of the subject.
+                            Note: Eligibility conditions laid down in Common Counselling for M.Sc. programmes (CCMN) for
+                            admission in SLIET shall also be applicable.
+
+                            (b) Duration: The duration of the M.Sc. Programmes is two years.</p>
+                    </div>
+                </li>
+                <li class="collapsible">
+                    <div class="collapsible-header" style="display: inline-block">Ph.D. Programme</div>
+                    <div class="collapsible-body">
+                        <p>The award of the Ph.D. Degree is in respect of high achievements, independent research and
+                            application of scientific knowledge to the solution of scientific and technical problems.
+                            The admission to Ph.D. programme (Part Time/Full Time) will be strictly as per institute
+                            rules.
+
+                            ELIGIBILITY:
+
+                            (i) (a)
+                            Engineering & Technology (Except Food Engineering & Technology): B.E./B.Tech. and M.E./
+                            M.Tech. OR Integrated Master’s Degree in Engineering/Technology degree in relevant branch OR
+                            equivalent degree with First Class in any one of the Degrees.
+
+                            (b)
+                            Food Engineering & Technology: Bachelor’s degree in Science/Engineering/Technology and
+                            Master’s Degree in Food Science/Technology/Engineering OR Microbial & Food Technology, OR
+                            Biotechnology OR Integrated Master’s Degree in Engineering /Technology OR equivalent degree
+                            with First Class in any one of the Degrees.
+
+                            (ii)
+                            Sciences: Bachelor’s degree in Science/Technology/Engineering and Master’s Degree in
+                            Science/ Technology/ Engineering in relevant discipline OR Integrated Master’s Degree in
+                            Science/ Technology/Engineering OR equivalent degree with First Class in any one of the
+                            Degrees.
+
+                            (iii)
+                            Humanities: Bachelor’s Degree and Master’s Degree in Humanities in relevant discipline OR
+                            equivalent degree with First Class in any of the Degrees.
+
+                            (iv)
+                            Management: Bachelor’s Degree and Master’s Degree in Management/Engineering in relevant
+                            discipline OR equivalent degree with First Class in any of the Degrees.
+
+                            Seats:
+                            1. Ph.D. Fellowship sanctioned by Ministry of Education = 118 (Maximum)
+                            2. AICTE Doctoral Fellowship (ADF) = 08
+
+                            3. Visvesvaraya Ph.D. Scheme with Fellowship for Electronics and IT: Phase-II = 03
+                            (supported by Ministry of Electronics & Information Technology)
+                            Electronics & Communication Engineering = 02
+                            Computer Science and Engineering = 01
+                            4. Ph.D. seats funded by various agencies like UGC, CSIR are filled as per their sanction
+                            and slot available with Faculty.
+                            5. Full Time without fellowship and Part Time Ph.D. seats are also filled as per
+                            applications and slot available with Faculty.</p>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <p>If you have any queries related to the admissions process, please contact us at admissions@sliet.ac.in</p>
+
+    </main>
+</div>
+<!--<footer style="padding: 2rem 0; margin-top: 5rem; position: sticky; bottom: 0">-->
+<!--    <p style="margin: 0">&copy; SLIET 2023. All rights reserved.</p>-->
+<!--</footer>-->
+<script src="script.js"></script>
+
+</body>
+</html>
